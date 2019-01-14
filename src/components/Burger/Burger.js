@@ -1,5 +1,11 @@
 import React from 'react';
 
-const name = (props) => {
-  
+const burger = (props) => {
+    return (
+        <div>
+            
+        </div>
+    );
 }
+
+export default burger;
