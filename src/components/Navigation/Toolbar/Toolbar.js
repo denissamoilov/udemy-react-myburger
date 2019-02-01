@@ -3,12 +3,15 @@ import React from 'react';
 import classes from './Toolbar.css';
 import Logo from '../../Logo/Logo';
 import NavigationItems from '../NavigationItems/NavigationItems';
+import Button from '../../UI/Button/Button';
 
 const toolbar = (props) => (
     <header className={classes.Toolbar}>
-        <div>MENU</div>
-        <Logo />
-        <nav>
+        <Button clicked={props.open} btnType='Menu'><span></span>Menu</Button>
+        <div className={classes.Logo}>
+            <Logo />
+        </div>
+        <nav className={classes.DesktopOnly}>
             <NavigationItems />
         </nav>
     </header>

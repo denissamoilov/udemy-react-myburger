@@ -10,15 +10,44 @@
     font-weight: bold;
 }
 
-.Button:first-of-type {
-    margin-left: 0;
-    padding-left: 0;
-}
-
 .Success {
     color: #5C9210;
 }
 
 .Danger {
     color: #944317;
+}
+
+.Menu {
+    height: 20px;
+    line-height: 20px;
+    padding: 0 0 0 40px;
+    position: relative;
+}
+
+.Menu:before,
+.Menu:after,
+.Menu span {
+    background-color: #fff;
+    content: '';
+    height: 2px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 30px;
+}
+
+.Menu span {
+    display: block;
+    top: calc(50% - 1px);
+}
+
+.Menu:before,
+.Menu:after {
+    content: '';
+}
+
+.Menu:after {
+    top: auto;
+    bottom: 0;
 }
