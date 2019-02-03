@@ -19,10 +19,17 @@
 }
 
 .Menu {
+    display: none;
     height: 20px;
     line-height: 20px;
     padding: 0 0 0 40px;
     position: relative;
+}
+
+@media (max-width: 500px) {
+    .Menu {
+        display: block;
+    }
 }
 
 .Menu:before,
